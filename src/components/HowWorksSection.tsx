@@ -34,7 +34,7 @@ export function HowWorksSection() {
             className="w-full max-w-[756px] h-full  max-h-[444px]"
           />
         </div>
-        <div>
+        <div className="md:ml-9">
           <div className="py-5 px-3 border-b border-gray-300">
             <span className="text-4xl md:text-[44px] font-medium">
               Etapa Inicial
