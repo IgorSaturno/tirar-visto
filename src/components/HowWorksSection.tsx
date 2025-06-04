@@ -31,7 +31,7 @@ export function HowWorksSection() {
           <img
             src={happyTourist}
             alt="Happy tourist sightseeing city with map"
-            className="w-full max-w-[756px] h-full  max-h-[444px]"
+            className="w-full max-w-[756px] h-full  max-h-[444px] "
           />
         </div>
         <div className="md:ml-9">
@@ -41,7 +41,6 @@ export function HowWorksSection() {
             </span>
             <p className="text-gray-400 mt-3">
               Lorem Ipsum is simply dummy text of the printing and typesetting{" "}
-              <br />
               industry.{" "}
             </p>
           </div>
