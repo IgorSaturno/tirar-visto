@@ -15,13 +15,13 @@ export function WhyChooseUsSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-1/5 left-70 transform -rotate-10">
+      <div className="absolute bottom-1/5 left-70 transform -rotate-10 hidden md:block">
         <div className="bg-white p-4 rounded-xl shadow-lg">
           <ClockIcon />
         </div>
       </div>
 
-      <div className="absolute top-1/6 right-72 transform rotate-10">
+      <div className="absolute top-1/6 right-72 transform rotate-10 hidden md:block">
         <div className="bg-white p-4 rounded-xl shadow-lg">
           <PhoneCallIcon />
         </div>
