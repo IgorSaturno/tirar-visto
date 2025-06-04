@@ -13,19 +13,16 @@ export function Navbar() {
   return (
     <header className="bg-white">
       <div className="container mx-auto flex items-center justify-between py-5 px-4 md:px-0">
-        {/* Logo */}
         <a href="#" className="flex items-center space-x-2">
           <img src={tirarVisto} alt="Tirar Visto Logo" className="h-8 w-auto" />
         </a>
 
-        {/* Botão Hamburger (aparece apenas em mobile) */}
         <button
           className="md:hidden focus:outline-none"
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label="Toggle menu"
         >
           {isOpen ? (
-            // Ícone “X” quando o menu está aberto
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-8 w-8 text-gray-900"
@@ -41,7 +38,6 @@ export function Navbar() {
               />
             </svg>
           ) : (
-            // Ícone “hambúrguer” quando o menu está fechado
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-8 w-8 text-gray-900"
@@ -59,7 +55,6 @@ export function Navbar() {
           )}
         </button>
 
-        {/* Links de Navegação (visíveis em md: e ocultos em mobile) */}
         <nav className="hidden md:flex space-x-6 text-gray-900 text-sm md:text-base">
           {links.map((l) => (
             <a
@@ -73,7 +68,6 @@ export function Navbar() {
         </nav>
       </div>
 
-      {/* Menu Mobile (aparece apenas em telas < md, quando isOpen = true) */}
       {isOpen && (
         <nav className="md:hidden bg-white border-t border-gray-200">
           <ul className="flex flex-col space-y-1 px-4 py-4">
@@ -82,7 +76,7 @@ export function Navbar() {
                 <a
                   href={l.href}
                   className="block py-2 text-gray-900 hover:bg-gray-100 rounded-md transition"
-                  onClick={() => setIsOpen(false)} // fecha o menu ao clicar no link
+                  onClick={() => setIsOpen(false)}
                 >
                   {l.label}
                 </a>
